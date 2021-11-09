@@ -2,43 +2,40 @@
 
 ## Description
 
-Carries over all changes from [Enhanced Lighting for ENB](https://www.nexusmods.com/skyrimspecialedition/mods/1377). Also patches some modded locations to use ELE's lighting templates & image spaces, and adjusts some modded imagespaces & lights.
+Carries over changes from [Enhanced Lighting for ENB](https://www.nexusmods.com/skyrimspecialedition/mods/1377) when reverted. Also patches some modded locations to use ELE's lighting templates & image spaces, and adjusts some modded imagespaces & lights.
 
-<details>
-  <summary>Detailed list of included changes</summary>
+### Supported mods
 
-  - Image Spaces: HDR, cinematic, tint
-  - Lights: record flags, flags, object bounds, radius, color, near clip, fade value
-  - Worldspaces: interior lighting
-  - Cells: lighting, lighting template, water height, water noise texture, sky and weather from region, image space
-  - Placed objects: record flags, primitive, light data, bound half extents, unknown, lighting template, image space, location reference, placement
-</details>
+The number after the mod indicates the version the "mod support patch" was made for. You can safely use it for other versions too, might just not be quite right if there were cell changes or some such.
 
-<details>
-  <summary>Supported mods</summary>
-  Patcher was made for version in parantheses, but should mostly work okay for any version.
+- [Beyond Skyrim - Bruma SE](https://www.nexusmods.com/skyrimspecialedition/mods/10917) (1.4.2)
+- [Cutting Room Floor - SSE](https://www.nexusmods.com/skyrimspecialedition/mods/276) (3.1.9)
+- [Darkend](https://www.nexusmods.com/skyrimspecialedition/mods/10423) (1.4)
+- [Falskaar](https://www.nexusmods.com/skyrimspecialedition/mods/2057) (2.2)
+- [Helgen Reborn](https://www.nexusmods.com/skyrimspecialedition/mods/5673) (V106.SSE)
+- [Lanterns of Skyrim](https://www.nexusmods.com/skyrimspecialedition/mods/2429) (any version)
+- [Legacy of the Dragonborn SSE](https://www.nexusmods.com/skyrimspecialedition/mods/11802) (5.5.2, 4.1.1 support included)
+- [Medieval Lanterns of Skyrim](https://www.nexusmods.com/skyrimspecialedition/mods/27622) (any version)
+- [Ravengate](https://www.nexusmods.com/skyrimspecialedition/mods/12617) (0.06BTASSE)
 
-  - Based on ELE's official patches, with updates here & there as said patches are 2 years old
-    - [Beyond Skyrim - Bruma SE](https://www.nexusmods.com/skyrimspecialedition/mods/10917) (1.4.2)
-    - [Cutting Room Floor - SSE](https://www.nexusmods.com/skyrimspecialedition/mods/276) (3.1.9)
-    - [Darkend](https://www.nexusmods.com/skyrimspecialedition/mods/10423) (1.4)
-    - [Falskaar](https://www.nexusmods.com/skyrimspecialedition/mods/2057) (2.2)
-    - [Helgen Reborn](https://www.nexusmods.com/skyrimspecialedition/mods/5673) (V106.SSE)
-      - Added light bulb colors
-    - [Lanterns of Skyrim](https://www.nexusmods.com/skyrimspecialedition/mods/2429) (any version)
-    - [Legacy of the Dragonborn SSE](https://www.nexusmods.com/skyrimspecialedition/mods/11802) (5.5.2, 4.1.1 support included)
-      - Added light bulb colors
-      - v5 version uses brighter lighting templates for the museum interior, since the lighting almost purely depends on those now
-    - [Medieval Lanterns of Skyrim](https://www.nexusmods.com/skyrimspecialedition/mods/27622) (any version)
-    - [Ravengate](https://www.nexusmods.com/skyrimspecialedition/mods/12617) (0.06BTASSE)
-      - Added light bulb colors
-</details>
+### Details for the curious
 
-## Installation
+- [Technical details](docs/Technical.md)
+- [Mod support details](docs/ModSupportDetails.md)
+
+## Installation & usage
+
+### Note about load order
+
+The first part of the patcher won't do much if ELE is late in your load order. The majority of people are probably only after the mod support part of the patcher so that's fine.
+
+If, however, you wish to merge ELE's changes with another mod you use, place `ELE_SSE.esp` before the mod you'd like to merge its changes with.
+
+For example, to merge Atlas Map Markers' Blackreach map data & ELE's Blackreach interior lighting, place `ELE_SSE.esp` before `Atlas Map Markers.esp` before running the patcher.
 
 ### Synthesis (Match or 0.20.5+ required)
 
-If you have Synthesis, there are 3 options:
+If you have Synthesis, there are 2 options:
 - In Synthesis, click on Git repository, and choose ELE Patcher from the list of patchers
 - [Grab the exe](https://github.com/Benna96-Synthesis/ELE_patcher/releases/latest/download/ELE_Patcher.exe), then in Synthesis, click on External Program, and browse for the exe
   - Not recommended

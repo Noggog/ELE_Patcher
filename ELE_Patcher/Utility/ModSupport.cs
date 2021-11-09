@@ -182,6 +182,7 @@ namespace ELE_Patcher.Utility
 				dictionary.Add(BSHeartland.Cell.CYRCLoudRulerTempleArmory, darkIce);
 				dictionary.Add(BSHeartland.Cell.CYRCloudRulerTempleEastWing, darkIce);
 				dictionary.Add(BSHeartland.Cell.CYRCloudRulerTempleWestWing, darkIce);
+				dictionary.Add(BSHeartland.Cell.CYRForesterOutpostForestMountainInterior01, bright);
 				dictionary.Add(BSHeartland.Cell.CYRFortCutpurse, medium);
 				dictionary.Add(BSHeartland.Cell.CYRFortCutpurseJail, medium);
 				dictionary.Add(BSHeartland.Cell.CYRFortCutpurseTower, medium);
@@ -233,43 +234,11 @@ namespace ELE_Patcher.Utility
 				dictionary.Add(BSHeartland.Cell.CYRUnderpall04, dark);
 				dictionary.Add(BSHeartland.Cell.CYRUnderpall05, dark);
 				dictionary.Add(BSHeartland.Cell.CYRUnmarkedCave, dark);
-
-				// Added
-				dictionary.Add(BSHeartland.Cell.CYRForesterOutpostForestMountainInterior01, bright);
-
-				#region Ignored for patching
-				/* Present in official patch, removed here since unused
-				 * CYRAleswellCrextusResidence, CYRAleswellFalegusResidence, CYRAleswellInn, CYRAleswellMathiasEndieriHouse, CYRAleswellUmogDarSeelHouse
-				 * CYRCloudTopLookout
-				 * CYRCrumblingMine
-				 * CYRDirichKeepFarmhouse
-				 * CYRDzonotCave
-				 * CYRFortCaractacus01
-				 * CYRFortColdcorn01, CYRFortColdcorn02
-				 * CYRFortHomestead
-				 * CYRFortRayles01
-				 * CYRFrostCragSpireVault
-				 * CyrGarlasAgea, CyrGarlasTure
-				 * CYRGnollPass01
-				 * CYRLakesideRetreat
-				 * CYRLighthouseGoldCoast
-				 * CYRMountainWatchAvringErvigHouse, CYRMountainWatchAubertHouse, CYRMountainWatchBunkhouse, CYRMountainWatchZurikkiHouse
-				 * CYRNorthfringeSanctum03, CYRNorthfringeSanctum04, CYRNorthfringeSanctum05
-				 * CYROutlawEndreCave
-				 * CYRPellsGateInterior01BlacielAnHouse
-				 * CYRSedor
-				 * CyrSidewaysCave01, CyrSidewaysCave02, CyrSidewaysCave03
-				 * CYRWatersEdgeInterior06
-				 * CYRWellappBanditMine
-				 * CYRWeyeBastienAdrardHouse, CYRWeyeDominitianFarm, CYRWeyeDurashGraAgumHouse, CYRWeyeGeneralStore, CYRWeyeGrennHouse, CYRWeyeMessalaFarm, CYRWeyeWarehouseAux
-				 */
-				#endregion
 			}
 			#endregion
 			#region Cutting Room Floor
 			if (mods.Contains(KeyCRF))
 			{
-				// Note: Official patch doesn't change inherit flags at all, probably an oversight
 				dictionary.Add(CuttingRoomFloor.Cell.CRFBarleydarkFarmInterior, bright);
 				dictionary.Add(CuttingRoomFloor.Cell.CRFFrostRiverHenrikHouse, bright);
 				dictionary.Add(CuttingRoomFloor.Cell.CRFFrostRiverMeadery, bright);
@@ -281,12 +250,10 @@ namespace ELE_Patcher.Utility
 				dictionary.Add(CuttingRoomFloor.Cell.CRFIrontreeMillTrilfsHouse, bright);
 				dictionary.Add(CuttingRoomFloor.Cell.CRFStonehillsAleucHouse, bright);
 				dictionary.Add(CuttingRoomFloor.Cell.CRFStonehillsArgiFarseersHouse, bright);
+				dictionary.Add(CuttingRoomFloor.Cell.CRFStonehillsGesturHouse, bright);
 				dictionary.Add(CuttingRoomFloor.Cell.CRFStonehillsTalibHouse, bright);
 				dictionary.Add(CuttingRoomFloor.Cell.CRFWhiterunMaidenLoomManor, bright);
 				dictionary.Add(CuttingRoomFloor.Cell.CRFWhiterunWintersandManorHouse, bright);
-
-				// Added
-				dictionary.Add(CuttingRoomFloor.Cell.CRFStonehillsGesturHouse, bright);
 			}
 			#endregion
 			#region Darkend
@@ -368,13 +335,6 @@ namespace ELE_Patcher.Utility
 				dictionary.Add(Falskaar.Cell.FSWatervineChasm01, dark);
 				dictionary.Add(Falskaar.Cell.FSWatervineChasm02, dark);
 				dictionary.Add(Falskaar.Cell.FSWatervineChasm03, dark);
-
-				#region Ignored for patching
-				/* Present in official patch, removed here since unused
-				 * FSIceFort
-				 * FSStargazerGrove
-				 */
-				#endregion
 			}
 			#endregion
 			#region Helgen Reborn
@@ -408,14 +368,6 @@ namespace ELE_Patcher.Utility
 				dictionary.Add(HelgenReborn.Cell.aaaBalokTowerDisplay, dark);
 				dictionary.Add(HelgenReborn.Cell.aaaBalokTowerLower, dark);
 				dictionary.Add(HelgenReborn.Cell.aaaBalokVampLair, dark);
-
-				#region Ignored for patching
-				/* Present in official patch, removed here since unused
-				 * aaaBalokAerandilShip
-				 * aaaBalokCrypt01
-				 * aaaBalokDoorRoom
-				 */
-				#endregion
 			}
 			#endregion
 			#region Legacy of the Dragonborn
@@ -457,6 +409,7 @@ namespace ELE_Patcher.Utility
 				dictionary.Add(LegacyoftheDragonborn.Cell.DBMMAASEIrkRefuge, darkDwemer);
 				dictionary.Add(LegacyoftheDragonborn.Cell.DBMMAASEXribAnnex, darkDwemer);
 				dictionary.Add(LegacyoftheDragonborn.Cell.DBMPalePassPassage, darkIce);
+				dictionary.Add(LegacyoftheDragonborn.Cell.DBMRainsShelter, bright);
 				dictionary.Add(LegacyoftheDragonborn.Cell.DBMRavenRest, dark);
 				dictionary.Add(LegacyoftheDragonborn.Cell.DBMRkund01, darkIce);
 				dictionary.Add(LegacyoftheDragonborn.Cell.DBMRkund02, darkIce);
@@ -471,8 +424,9 @@ namespace ELE_Patcher.Utility
 				dictionary.Add(LegacyoftheDragonborn.Cell.DBMTrinimacTemple02, darkFalmer);
 				dictionary.Add(LegacyoftheDragonborn.Cell.DBMWindcallerPassN, darkIce);
 				dictionary.Add(LegacyoftheDragonborn.Cell.DBMWindcallerPassS, darkIce);
+				dictionary.Add(LegacyoftheDragonborn.Cell.DLC2MoesringPass02DBM, dark);
 
-				// v5 overhauled the museum, relying heavily on lighting templates, while v4 actually still used lighting
+				// v4 museum uses lighting, v5 relies heavily on lighting templates
 				if (old)
 				{
 					dictionary.Add(LegacyoftheDragonborn.CellLegacy.DBMDGAetheriumRoom, darkDwemer);
@@ -502,11 +456,11 @@ namespace ELE_Patcher.Utility
 				}
 				else
 				{
-					// Use brighter templates for v5
 					dictionary.Add(LegacyoftheDragonborn.Cell.DBMDGArmory, brighter);
 					dictionary.Add(LegacyoftheDragonborn.Cell.DBMDGArmoryEast, brighter);
 					dictionary.Add(LegacyoftheDragonborn.Cell.DBMDGArmoryWest, brighter);
 					dictionary.Add(LegacyoftheDragonborn.Cell.DBMDGDragonbornHall, brighter);
+					dictionary.Add(LegacyoftheDragonborn.Cell.DBMDGEastExhibitHalls, brighter);
 					dictionary.Add(LegacyoftheDragonborn.Cell.DBMDGHallofHeroes, brighter);
 					dictionary.Add(LegacyoftheDragonborn.Cell.DBMDGHallofHeroesHeist, brighter);
 					dictionary.Add(LegacyoftheDragonborn.Cell.DBMDGHallofHeroesHaunted, (brighterLt, null));
@@ -516,14 +470,9 @@ namespace ELE_Patcher.Utility
 					dictionary.Add(LegacyoftheDragonborn.Cell.DBMDGHallofSecretsBare, brighter);
 					dictionary.Add(LegacyoftheDragonborn.Cell.DBMDGLibrary, brighter);
 					dictionary.Add(LegacyoftheDragonborn.Cell.DBMDGSafehouse, brighter);
-					dictionary.Add(LegacyoftheDragonborn.Cell.DBMDGEastExhibitHalls, brighter);
 					dictionary.Add(LegacyoftheDragonborn.Cell.DBMGuildhouse, brighter);
 					dictionary.Add(LegacyoftheDragonborn.Cell.DBMDGStoreroom, brighter);
 				}
-
-				// Added
-				dictionary.Add(LegacyoftheDragonborn.Cell.DBMRainsShelter, bright);
-				dictionary.Add(LegacyoftheDragonborn.Cell.DLC2MoesringPass02DBM, dark);
 			}
 			#endregion
 			#region Ravengate
@@ -720,7 +669,7 @@ namespace ELE_Patcher.Utility
 				}
 			}
 			#endregion
-
+			#region Falskaar
 			if (mods.Contains(KeyFalskaar))
 			{
 				// Inherit flags for Bjarrik's demise & Borval catacombs
@@ -751,7 +700,8 @@ namespace ELE_Patcher.Utility
 					}
 				}
 			}
-
+			#endregion
+			#region Legacy of the Dragonborn
 			if (mods.Contains(KeyLotDb))
 			{
 				// Fog clip distance & inherits flags for Ayleid pocket realm
@@ -781,7 +731,7 @@ namespace ELE_Patcher.Utility
 								.DeepCopyIn(ayleidRealm, new Cell.TranslationMask(false) { Lighting = true });
 					}
 				}
-
+#
 				// Fog near for Dregas Volar's sanctuary
 				if (LegacyoftheDragonborn.Cell.DBMDregasVolarInt.TryResolveContext<ISkyrimMod, ISkyrimModGetter, ICell, ICellGetter>(state.LinkCache, out var dregasContext)) {
 					var dregas = dregasContext.Record.DeepCopy();
@@ -795,9 +745,11 @@ namespace ELE_Patcher.Utility
 					}
 				}
 			}
+			#endregion
 		}
 		public static void PatchLightsExtra (this HashSet<ModKey> mods, IPatcherState<ISkyrimMod, ISkyrimModGetter> state)
 		{
+			#region Darkend
 			if (mods.Contains(KeyDarkend))
 			{
 				// Shadowcasting & fade value for the added torch
@@ -819,6 +771,8 @@ namespace ELE_Patcher.Utility
 				if (changed)
 					state.PatchMod.Lights.Set(torch);
 			}
+			#endregion
+			#region Lanterns of Skyrim
 			if (mods.Contains(KeyLanterns))
 			{
 				// Fade value for the lantern
@@ -830,6 +784,7 @@ namespace ELE_Patcher.Utility
 					state.PatchMod.Lights.Set(lantern);
 				}
 			}
+			#endregion
 		}
 		#endregion
 	}

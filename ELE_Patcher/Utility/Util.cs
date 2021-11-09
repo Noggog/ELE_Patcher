@@ -20,6 +20,8 @@ namespace ELE_Patcher.Utility
 		{
 			var mod = GetDisposableMod();
 			masters = GetModMasters(mod);
+			if (ModKey.TryFromNameAndExtension("RelightingSkyrim_SSE.esp", out var keyRS))
+				masters.Add(keyRS);
 			return mod;
 
 			ISkyrimModDisposableGetter GetDisposableMod()
